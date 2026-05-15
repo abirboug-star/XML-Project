@@ -1,0 +1,430 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+ 
+body { 
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: #f4f6f9; 
+    color: #222; 
+    line-height: 1.6; 
+} 
+ 
+.container { 
+    width: 90%; 
+    max-width: 1200px; 
+    margin: auto; 
+} 
+ 
+/* HEADER */ 
+ 
+header { 
+    background-color: #0f172a; 
+    color: white; 
+    padding: 20px 0; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+} 
+ 
+.nav-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+} 
+ 
+header h1 { 
+    font-size: 28px; 
+} 
+ 
+nav ul { 
+    display: flex; 
+    list-style: none; 
+    gap: 25px; 
+} 
+ 
+nav a { 
+    text-decoration: none; 
+    color: white; 
+    transition: 0.3s; 
+} 
+ 
+nav a:hover { 
+    color: #38bdf8; 
+} 
+ 
+/* HERO */ 
+ 
+.hero { 
+    height: 85vh; 
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
+    url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop') center/cover; 
+ 
+    display: flex; 
+    align-items: center; 
+    text-align: center; 
+    color: white; 
+} 
+ 
+.hero-content { 
+    width: 100%; 
+} 
+ 
+.hero h2 { 
+    font-size: 55px; 
+    margin-bottom: 20px; 
+} 
+ 
+.hero p { 
+    font-size: 20px; 
+    max-width: 800px; 
+    margin: auto; 
+    margin-bottom: 35px; 
+} 
+ 
+.btn { 
+    display: inline-block; 
+    background-color: #38bdf8; 
+    color: white; 
+    text-decoration: none; 
+    padding: 14px 35px; 
+    border-radius: 8px; 
+    transition: 0.3s; 
+    font-weight: bold; 
+} 
+ 
+.btn:hover { 
+    background-color: #0ea5e9; 
+} 
+ 
+/* SECTION */ 
+ 
+.section { 
+    padding: 90px 0; 
+} 
+ 
+.light-section { 
+    background-color: white; 
+} 
+ 
+.section-title { 
+    text-align: center; 
+    margin-bottom: 50px; 
+} 
+ 
+.section-title h2 { 
+    font-size: 40px; 
+    margin-bottom: 10px; 
+    color: #0f172a; 
+} 
+ 
+.section-title p { 
+    color: #666; 
+} 
+ 
+/* TABLE */ 
+ 
+.table-container { 
+    overflow-x: auto; 
+} 
+ 
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    background-color: white; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08); 
+} 
+ 
+table th { 
+    background-color: #0f172a; 
+    color: white; 
+    padding: 16px; 
+} 
+ 
+table td { 
+    padding: 16px; 
+    text-align: center; 
+    border-bottom: 1px solid #ddd; 
+} 
+ 
+table tr:hover { 
+    background-color: #f1f5f9; 
+} 
+ 
+/* CARDS */ 
+ 
+.cards { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 25px; 
+} 
+ 
+.card { 
+    background-color: #f8fafc; 
+    padding: 30px; 
+    border-radius: 12px; 
+    text-align: center; 
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08); 
+    transition: 0.3s; 
+} 
+ 
+.card:hover { 
+    transform: translateY(-5px); 
+} 
+ 
+.card h3 { 
+    margin-bottom: 10px; 
+    color: #0f172a; 
+} 
+ 
+/* RESULTATS */ 
+ 
+.result-box { 
+    background-color: white; 
+    padding: 40px; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08); 
+    max-width: 700px; 
+    margin: auto; 
+} 
+ 
+form { 
+    display: flex; 
+    gap: 15px; 
+    flex-wrap: wrap; 
+} 
+ 
+select { 
+    flex: 1; 
+    padding: 14px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    font-size: 16px; 
+} 
+ 
+button { 
+    padding: 14px 30px; 
+    border: none; 
+    border-radius: 8px; 
+    background-color: #0f172a; 
+    color: white; 
+    cursor: pointer; 
+    transition: 0.3s; 
+} 
+ 
+button:hover { 
+    background-color: #1e293b; 
+} 
+ 
+/* FOOTER */ 
+ 
+footer { 
+    background-color: #0f172a; 
+    color: white; 
+    text-align: center; 
+    padding: 30px 0; 
+} 
+ 
+.footer-content p { 
+    margin: 5px 0; 
+} 
+ 
+/* ===== RESULTATS MODERN ===== */ 
+ 
+.result-card{ 
+    background-color: white; 
+    padding: 40px; 
+    border-radius: 20px; 
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    } 
+ 
+.result-card h2{ 
+    margin-bottom: 30px; 
+    color: #0f172a; 
+} 
+ 
+/* ===== WINNER ===== */ 
+ 
+.winner-row{ 
+    background-color: #dcfce7 !important; 
+    font-weight: bold; 
+} 
+ 
+.winner-row td{ 
+    color: #166534; 
+} 
+ 
+/* ===== BADGE ===== */ 
+ 
+.badge{ 
+ 
+    background: linear-gradient( 
+        135deg, 
+        #4f46e5, 
+        #7c3aed 
+    ); 
+ 
+    color: white; 
+ 
+    padding: 8px 14px; 
+ 
+    border-radius: 8px; 
+ 
+    font-size: 14px; 
+ 
+    font-weight: bold; 
+ 
+    display: inline-block; 
+} 
+ 
+/* ===== FORMULAIRE ===== */ 
+ 
+.inscription-form{ 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+} 
+ 
+.double-input{ 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+} 
+ 
+input{ 
+ 
+    width: 100%; 
+ 
+    padding: 14px; 
+ 
+    border-radius: 10px; 
+ 
+    border: 1px solid #ddd; 
+ 
+    outline: none; 
+ 
+    transition: 0.3s; 
+} 
+ 
+input:focus{ 
+ 
+    border-color: #7c3aed; 
+ 
+    box-shadow: 0 0 10px rgba(124,58,237,0.2); 
+} 
+ 
+/* ===== SELECT ===== */ 
+ 
+select{ 
+ 
+    width: 100%; 
+ 
+    padding: 14px; 
+ 
+    border-radius: 10px; 
+ 
+    border: 1px solid #ddd; 
+ 
+    font-size: 16px; 
+ 
+    outline: none; 
+ 
+    transition: 0.3s; 
+} 
+ 
+select:focus{ 
+ 
+    border-color: #7c3aed; 
+ 
+    box-shadow: 0 0 10px rgba(124,58,237,0.2); 
+} 
+ 
+/* ===== BUTTON ===== */ 
+ 
+button{ 
+ 
+    background: linear-gradient( 
+        135deg, 
+        #4f46e5, 
+        #7c3aed 
+    ); 
+ 
+    color: white; 
+ 
+    border: none; 
+ 
+    padding: 14px 28px; 
+ 
+    border-radius: 10px; 
+ 
+    font-weight: bold; 
+ 
+    cursor: pointer; 
+ 
+    transition: 0.3s; 
+} 
+ 
+button:hover{ 
+ 
+    transform: translateY(-2px); 
+ 
+    opacity: 0.95; 
+} 
+ 
+/* ===== TABLE HOVER ===== */ 
+ 
+table tr{ 
+    transition: 0.3s; 
+} 
+ 
+table tr:hover{ 
+    transform: scale(1.01); 
+} 
+ 
+/* ===== RESPONSIVE ===== */ 
+ 
+@media(max-width:768px){ 
+ 
+    .double-input{ 
+        grid-template-columns: 1fr; 
+    } 
+ 
+    .result-card{ 
+        padding: 25px; 
+    } 
+ 
+} 
+ 
+/* RESPONSIVE */ 
+ 
+@media (max-width: 768px) { 
+ 
+    .nav-container { 
+        flex-direction: column; 
+        gap: 20px; 
+    } 
+ 
+    nav ul { 
+        flex-wrap: wrap; 
+        justify-content: center; 
+    } 
+ 
+    .hero h2 { 
+        font-size: 38px; 
+    } 
+ 
+    .hero p { 
+        font-size: 18px; 
+    } 
+ 
+    form { 
+        flex-direction: column; 
+    } 
+ 
+    button { 
+        width: 100%; 
+    } 
+}
